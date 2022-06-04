@@ -1,0 +1,56 @@
+#include <stdio.h>
+void pd(int n);
+int main()
+{
+    int n;
+    printf("Enter a number");
+    scanf("%d",&n);
+    pd(n);
+    return 0;
+}
+
+void pd(int n){
+    if(n<1) return;
+    printf("%d\n",n);
+    pd(n-1);
+}
+
+----------------------------------------------
+#include <stdio.h>
+void pi(int n);
+int main()
+{
+    int n;
+    printf("Enter a number");
+    scanf("%d",&n);
+    pi(n);
+    return 0;
+}
+
+void pi(int n){
+    if(n<1) return;
+   pi(n-1);
+   printf("%d\n",n);
+   
+   
+}
+---------------------------------
+
+#include <stdio.h>
+int fact(int n);
+int main()
+{
+    int n;
+    printf("Enter a number");
+    scanf("%d",&n);
+    int k = fact(n);
+    printf("%d",k);
+    return 0;
+}
+
+int fact(int n){
+    if(n<1) return 1;
+    int k = fact(n-1);
+    return n*k;
+    
+}
